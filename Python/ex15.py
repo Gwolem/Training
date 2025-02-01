@@ -1,10 +1,12 @@
 from sys import argv
 
-script, filename = argv
+# (script, filename) = argv
 
-txt = open(filename)
+# fileName = 'D:\Work\Training\Training\Python\ex15_sample.txt'
 
-print(f"Содержимое файла {filename}:")
+txt = open('D:\Work\Training\Training\Python\ex15_sample.txt', "r")
+
+print(f"Содержимое файла {txt.name}:")
 print(txt.read())
 
 print("Снова введите имя файла:")
